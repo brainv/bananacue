@@ -2,6 +2,7 @@
     "name": "brainv/bananacue",
     "description": "BananaCue — Universal PHP queue abstraction layer (SQS, RabbitMQ, Kafka, Redis, ActiveMQ, Pulsar, Database, In-Memory)",
     "type": "library",
+    "license": "MIT",
     "require": {
         "php": ">=8.1"
     },

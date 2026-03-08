@@ -1,0 +1,32 @@
+{
+    "name": "brainv/bananacue",
+    "description": "BananaCue — Universal PHP queue abstraction layer (SQS, RabbitMQ, Kafka, Redis, ActiveMQ, Pulsar, Database, In-Memory)",
+    "type": "library",
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10"
+    },
+    "suggest": {
+        "aws/aws-sdk-php":          "Required for the SQS driver",
+        "php-amqplib/php-amqplib":  "Required for the RabbitMQ driver",
+        "ext-rdkafka":              "Required for the Kafka driver (librdkafka + php extension)",
+        "predis/predis":            "Required for the Redis driver when ext-redis is not available",
+        "stomp-php/stomp-php":      "Required for the ActiveMQ / STOMP driver",
+        "guzzlehttp/guzzle":        "Required for the Apache Pulsar driver",
+        "ext-pdo":                  "Required for the Database driver"
+    },
+    "autoload": {
+        "psr-4": {
+            "Queue\\": "./"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Queue\\Tests\\": "./Tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
